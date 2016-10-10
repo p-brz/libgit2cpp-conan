@@ -11,7 +11,8 @@ class LibgitCppConan(ConanFile):
     name = "libgit2cpp"
     version = "0.0-8863fac"
     license=""
-    url = ""
+    #recipe repository
+    url = "https://github.com/paulobrizolara/libgit2cpp-conan"
 
     settings = "os", "compiler", "build_type", "arch"
     options = {
@@ -67,6 +68,8 @@ class LibgitCppConan(ConanFile):
         if self.options.std:
             self.cpp_info.cppflags = ["-std=%s" % self.options.std]
 
+
+####################################### Helpers ################################################
 
     def cmake_args(self):
         """Generate arguments for cmake"""
