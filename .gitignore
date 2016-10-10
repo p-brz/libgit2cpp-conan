@@ -1,0 +1,13 @@
+*.pyc
+build/
+
+# Qt creator
+*.config
+*.creator
+*.files
+*.includes
+*.creator.user
+
+# Conan files
+conaninfo.txt
+conanbuildinfo.cmake
